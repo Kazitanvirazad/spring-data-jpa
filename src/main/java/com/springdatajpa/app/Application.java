@@ -19,7 +19,7 @@ public class Application {
 
 	public static void main(String[] args) {
 
-		ApplicationContext context = ApplicationContextUtil.getApplicationContext();
+		ApplicationContext context = ApplicationContextUtil.context;
 		DepartmentService departmentService = context.getBean(DepartmentService.class);
 		EmployeeService employeeService = context.getBean(EmployeeService.class);
 		SuperHeroService sHeroService = context.getBean(SuperHeroService.class);

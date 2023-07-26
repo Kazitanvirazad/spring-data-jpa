@@ -91,7 +91,7 @@ public class LaptopDTO implements Serializable {
 
 	public LaptopDTO(Laptop laptop) {
 		this();
-		ApplicationContext context = ApplicationContextUtil.getApplicationContext();
+		ApplicationContext context = ApplicationContextUtil.context;
 		EmployeeService employeeService = context.getBean(EmployeeService.class);
 		this.lid = laptop.getLid();
 		this.laptopBrand = laptop.getLaptopBrand();

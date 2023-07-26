@@ -8,11 +8,7 @@ import com.springdatajpa.app.config.PersistentConfig;
 import com.springdatajpa.app.config.PersistentConfigPG;
 
 public class ApplicationContextUtil {
-
-	public static ApplicationContext getApplicationContext() {
-		ApplicationContext context = new AnnotationConfigApplicationContext(PersistentConfig.class,
-				PersistentConfigPG.class, AppConfig.class);
-		return context;
-	}
+	public static ApplicationContext context = new AnnotationConfigApplicationContext(PersistentConfig.class,
+			PersistentConfigPG.class, AppConfig.class);
 
 }
